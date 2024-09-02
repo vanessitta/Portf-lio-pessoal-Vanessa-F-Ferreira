@@ -1,0 +1,234 @@
+/* Estilo básico para o corpo da página */
+body {
+    background-color: #121212; /* Cor de fundo escura */
+    color: #e0e0e0; /* Cor do texto clara */
+    font-family: 'Arial', sans-serif; /* Fonte limpa e moderna */
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o menu de navegação */
+nav ul {
+    display: flex; /* Flexbox para alinhamento horizontal */
+    justify-content: center; /* Centralizar itens */
+    border-bottom: 2px solid #fadff8; /* Linha abaixo do título */
+    background-color: #ae7aee; /* Cor de fundo escura para o menu */
+    padding: 15px;
+    list-style: none; /* Remove marcadores de lista */
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 25px; /* Espaçamento entre itens */
+}
+
+nav ul li a {
+    color: #130f0f; /* Cor do texto dos links */
+    text-decoration: none; /* Remove sublinhado dos links */
+    font-weight: 600; /* Peso da fonte */
+    font-size: 17px; /* Tamanho da fonte dos links */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* Estilo para as seções */
+section {
+    padding: 40px;
+    background-color: #131111; /* Cor de fundo das seções */
+    border-radius: 8px; /* Bordas arredondadas */
+    margin: 20px auto; /* Margem automática para centralizar */
+    max-width: 1000px; /* Largura máxima */
+    color: #e0e0e0e2; /* Cor do texto */
+}
+
+/* Estilo para o título das seções */
+h2 {
+    color: hwb(274 11% 5%);
+    font-size: 28px; /* Tamanho do título */
+    border-bottom: 2px solid #ae7aee; /* Linha abaixo do título */
+    padding-bottom: 10px; /* Espaçamento abaixo do título */
+    margin-bottom: 20px; /* Margem abaixo do título */
+}
+
+/* Estilo para o botão */
+button {
+    background-color: #f317ca; /* Cor de fundo do botão */
+    color: #121212; /* Cor do texto do botão */
+    padding: 10px 20px; /* Espaçamento interno */
+    border: none; /* Remove bordas padrão */
+    border-radius: 5px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de ponteiro ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+button:hover {
+    background-color: #ff8c00; /* Cor de fundo do botão ao passar o mouse */
+}
+
+/* Estilo para a seção de portfólio */
+#portfolio {
+    background-color: #222; /* Fundo escuro para combinar com o tema dark */
+    color: #f0f0f0; /* Texto claro para contraste */
+    padding: 2px;
+    border-radius: 10px;
+    margin: 10px auto;
+    max-width: 20000x; /* Largura máxima para centralizar o conteúdo */
+}
+
+#portfolio h2 {
+    font-size: 1.5em;
+    margin-bottom: 12px;
+    color: #ae7aee; /* Cor de destaque para o título */
+    text-align: center;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px; /* Espaçamento entre os itens */
+    justify-content: center;
+}
+
+.portfolio-item {
+    background-color: #333; /* Fundo escuro para os cartões */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Sombra para destaque */
+    width: calc(25% - 20px); /* Ajusta a largura para dois itens por linha */
+    transition: transform 0.3s, box-shadow 0.3s; /* Efeitos de transição */
+}
+
+.portfolio-item img {
+    width: 100%; /* Imagem ocupa toda a largura do cartão */
+    height: auto;
+}
+
+.portfolio-info {
+    padding: 20px;
+}
+
+.portfolio-info h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.portfolio-info p {
+    font-size: 1em;
+    margin-bottom: 15px;
+}
+
+.portfolio-link {
+    display: inline-block;
+    background-color: #e933f3; /* Cor de fundo do link */
+    color: #222; /* Cor do texto do link */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s; /* Transição de cor ao passar o mouse */
+}
+
+.portfolio-link:hover {
+    background-color: #e6892b; /* Cor do link ao passar o mouse */
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: calc(100% - 20px); /* Ajusta para um item por linha em telas menores */
+    }
+}
+
+
+/* Estilo para a imagem na seção Sobre Mim */
+#sobre-mim img {
+    display: block; /* Faz a imagem se comportar como um bloco */
+    max-width: 50%; /* Largura máxima da imagem */
+    height: auto; /* Mantém a proporção da imagem */
+    margin: 10px auto; /* Margem automática para centralizar */
+    border-radius: 50px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(58, 17, 243, 0.3); /* Sombra da imagem */
+}
+
+/* Estilo para a seção de contato */
+#contato {
+    background-color: #333; /* Cor de fundo escura para um tema dark */
+    color: #f0f0f0; /* Cor de texto clara para contraste */
+    padding: 40px;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px; /* Largura máxima para manter a seção centralizada */
+}
+
+#contato h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: ##ae7aee; /* Cor de destaque para o título */
+    text-align: center;
+}
+
+#contato p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    background-color: #444; /* Fundo escuro para campos de entrada */
+    color: #f0f0f0; /* Texto claro nos campos */
+    border: 1px solid #555; /* Borda para campos de entrada */
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    font-size: 1em;
+}
+
+textarea {
+    resize: vertical; /* Permite redimensionar verticalmente */
+}
+
+button {
+    background-color: #ae7aee; /* Cor de fundo do botão */
+    color: #333; /* Cor do texto do botão */
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #e62be3; /* Cor do botão ao passar o mouse */
+}
+
+@media (max-width: 600px) {
+    #contato {
+        padding: 20px;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea {
+        font-size: 0.9em;
+    }
+
+    button {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}

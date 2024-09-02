@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--configurar a forma como uma página da web é exibida
+    <title>Meu Portfólio</title>         <!-- titulo -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('sobre-mim')">Sobre mim</a></li>
+                <li><a href="#" onclick="showSection('formacao')">Formação</a></li>
+                <li><a href="#" onclick="showSection('portfolio')">Portfólio</a></li>
+                <li><a href="#" onclick="showSection('contato')">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Seção Sobre Mim -->
+        <section id="sobre-mim">
+            <h2>Sobre mim</h2>
+            <p>Olá! Sou Vanessa. Sempre fui curiosa para entender como as coisas funcionam, o que despertou minha paixão pela tecnologia. No meu tempo livre, gosto de ouvir músicas, assistir a filmes e explorar novos conhecimentos. Sou determinada e estou constantemente em busca de aprimoramento pessoal e profissional.
+            </p>
+            <img src="IMG_1193.jpg" alt="Minha foto">
+        </section>
+        
+        <!-- Seção Formação -->
+        <section id="formacao" style="display:none;">
+            <h2>Formação</h2>
+            <ul>
+                <li>Cursando Tecnólogo em Análise e Desenvolvimento de Sistemas - UNINTER (EAD)</li>
+                <li>Cursando Engenharia de Software -  (Presencial)</li>
+                <li>Inglês: Básico</li>
+            </ul>
+        </section>
+
+<!-- Seção Portfólio -->
+<section id="portfolio" style="display:none;">
+    <h2>Portfólio</h2>
+    <div class="portfolio-grid">
+        <div class="portfolio-item">
+            <img src="img.jpg" alt="Projeto 1">
+            <div class="portfolio-info">
+                <h3>Projeto 1</h3>
+                <p>Uma calculadora usando HTML, CSS e JavaScript.</p>
+                <a href="https://github.com/vanessitta/calculadora.git" class="portfolio-link">Ver Projeto</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+        <!-- Seção Contato -->
+        <section id="contato" style="display:none;">
+            <h2>Contato</h2>
+            <p>Gostou do que viu e quer saber mais sobre mim ou discutir uma possível colaboração? Estou sempre aberta a novas oportunidades e adoraria conversar com você!</p>
+            <p>Preencha o formulário abaixo com suas informações e mensagem, seja para discutir um projeto, tirar dúvidas ou explorar novas oportunidades, estou aqui para ajudar.</p>
+            <form action="enviar-mensagem.php" method="post">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required placeholder="Seu nome completo">
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required placeholder="Seu endereço de email">
+        
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required placeholder="Digite sua mensagem aqui"></textarea>
+        
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Script para alternar entre as seções -->
+    <script src="script.js"></script>
+</body>
+</html>
